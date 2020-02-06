@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  height: 100%;
+
+  color: $default-text-color;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 140%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+
+  color: $default-text-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  border-radius: 0;
+}
