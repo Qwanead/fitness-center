@@ -1,0 +1,229 @@
+.main-screen {
+  color: $contrast-color;
+  background-image: radial-gradient(33.97% 69.22% at 16.03% 39.06%, $gradient-start-color, $gradient-end-color);
+}
+
+.main-screen__content-wrapper {
+  position: relative;
+
+  max-width: 1366px;
+  height: 100%;
+  min-height: 658px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 103px;
+  padding-bottom: 50px;
+  padding-left: 103px;
+
+  background-image: url("../../img/super-man-desktop-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 563px center;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image: url("../../img/super-man-desktop@2x.jpg");
+    background-size: 500px 556px, auto;
+  }
+}
+
+.main-screen__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-screen__tel {
+  letter-spacing: 0.03em;
+
+  color: $contrast-color;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-screen__title-wrapper {
+  position: relative;
+
+  width: 394px;
+  padding-top: 118px;
+
+  text-align: right;
+}
+
+.main-screen__city {
+  display: block;
+
+  margin-bottom: 14px;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+}
+
+.main-screen h2 {
+  margin: 0;
+  margin-bottom: 48px;
+
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+}
+
+.main-screen__features-list {
+  position: absolute;
+  bottom: 145px;
+  left: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.main-screen__social-list {
+  position: absolute;
+  right: 102px;
+  bottom: 79px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-screen__social-item {
+  margin-bottom: 11px;
+}
+
+.main-screen__social-list a {
+  text-transform: uppercase;
+
+  color: $contrast-color;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .main-screen__content-wrapper {
+    min-height: 554px;
+    padding-top: 40px;
+    padding-right: 45px;
+    padding-left: 45px;
+
+    background-image: url("../../img/super-man-tablet@1x.jpg");
+    background-position: 89.8% center;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("../../img/super-man-tablet@2x.jpg");
+      background-size: 324px 390px, auto;
+    }
+  }
+
+  .main-screen__tel {
+    letter-spacing: 0.02em;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .main-screen__title-wrapper {
+    width: 322px;
+    padding-top: 74px;
+
+    text-align: right;
+  }
+
+  .main-screen__city {
+    margin-bottom: 10px;
+
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .main-screen h2 {
+    margin-bottom: 34px;
+
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .main-screen__features-list {
+    bottom: 117px;
+    left: 1px;
+  }
+
+  .main-screen__social-list {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen__content-wrapper {
+    min-height: 491px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    background-image: none;
+  }
+
+  .main-screen__inner-wrapper {
+    position: relative;
+
+    max-width: 392px;
+    margin: 0 auto;
+  }
+
+  .main-screen__tel {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-screen__title-wrapper {
+    width: 100%;
+    padding-top: 74px;
+
+    text-align: right;
+  }
+
+  .main-screen__city {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .main-screen h2 {
+    margin-bottom: 37px;
+
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .main-screen__features-list {
+    bottom: 16px;
+    left: 0;
+  }
+
+  .main-screen__social-list {
+    display: none;
+  }
+}

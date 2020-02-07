@@ -1,0 +1,72 @@
+.gym__content-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  max-width: 1366px;
+  min-height: 756px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-right: 103px;
+  padding-bottom: 120px;
+  padding-left: 163px;
+}
+
+.gym__text-wrapper {
+  flex-shrink: 0;
+
+  width: 357px;
+  margin-right: 30px;
+  padding-top: 52px;
+}
+
+.gym h2 {
+  margin: 0;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+}
+
+.gym h3 {
+  margin: 0;
+  margin-bottom: 42px;
+
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.gym p {
+  margin: 0;
+  margin-bottom: 9px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  bottom: 114px;
+  left: 540px;
+
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+
+    width: 100px;
+    height: 100px;
+
+    content: "";
+
+    background-image: url("../../img/play-button-desktop@1x.png");
+  }
+}
