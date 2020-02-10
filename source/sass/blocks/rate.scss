@@ -1,0 +1,191 @@
+.rate {
+  width: 360px;
+  min-height: 448px;
+  margin-left: 40px;
+  padding: 7px;
+
+  transition: background-size $animation;
+
+  background-color: $contrast-color;
+  background-image: linear-gradient(135deg, $gradient-start-color, $gradient-end-color);
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
+
+.rate__item {
+  width: 100%;
+  height: 100%;
+  padding-top: 56px;
+  padding-right: 69px;
+  padding-bottom: 56px;
+  padding-left: 69px;
+
+  background-color: $contrast-color;
+}
+
+.rate__item h3 {
+  margin: 0;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 29px;
+}
+
+.rate__schedule {
+  display: block;
+
+  margin-bottom: 66px;
+
+  text-align: center;
+
+  color: $rate-schedule-color;
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.reate__price-wrapper {
+  margin-bottom: 33px;
+
+  text-align: center;
+}
+
+.rate__price {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+
+  padding-right: 45px;
+
+  color: $rate-price-color;
+
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 150%;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -54px;
+    left: -20px;
+
+    content: "5000";
+
+    opacity: 0.48;
+    color: $rate-price-shadow-color;
+
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 150%;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    top: 23px;
+    right: 0;
+
+    width: 30px;
+    height: 42px;
+
+    content: "";
+
+    background-image: url("../../img/ruble.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--1700::before {
+    content: "1700";
+  }
+
+  &--2700::before {
+    content: "2700";
+  }
+}
+
+.reate__price-wrapper img {
+  z-index: 1;
+}
+
+@media (max-width: $desktop-width) {
+  .rate {
+    width: 100%;
+    min-height: 449px;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 7px;
+
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .rate__item {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .rate {
+    min-height: 384px;
+    margin-top: 35px;
+  }
+
+  .rate__item {
+    padding-top: 44px;
+    padding-right: 34px;
+    padding-bottom: 44px;
+    padding-left: 34px;
+  }
+
+  .rate__item h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .rate__schedule {
+    margin-bottom: 54px;
+  }
+
+  .reate__price-wrapper {
+    margin-bottom: 29px;
+  }
+
+  .rate__price {
+    padding-right: 33px;
+
+    font-size: 48px;
+
+    &::before {
+      top: -44px;
+      left: -16px;
+
+      font-size: 80px;
+    }
+
+    &::after {
+      top: 19px;
+      right: -3px;
+
+      width: 24px;
+      height: 33px;
+
+      background-size: contain;
+    }
+  }
+}

@@ -64,57 +64,69 @@
           </div>
 
           <div class="gym__image-wrapper">
-            <img
-              src="./img/gym-desktop@1x.jpg"
-              alt="Тренажёрный зал"
-              width="660"
-              height="401"
-            >
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile@1x.webp 1x, ./img/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/gym-desktop@1x.webp 1x, ./img/gym-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/gym-mobile@1x.jpg 1x, ./img/gym-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
+              <img src="./img/gym-desktop@1x.jpg" srcset="./img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажёрный зал">
+            </picture>
           </div>
 
           <div class="gym__video-wrapper">
-            <img
-              src="./img/gym-video-desktop@1x.jpg"
-              alt="Тренажёрный зал видео"
-              width="364"
-              height="228"
-            >
+            <video width="364" height="228"></video>
           </div>
         </div>
       </section>
 
       <section class="subscription">
-        <h2>Абонементы</h2>
+        <div class="subscription__content-wrapper">
+          <h2>Абонементы</h2>
 
-        <ul class="subscription__duration-list">
-          <li class="subscription__duration-item">1 месяц</li>
-          <li class="subscription__duration-item">6 месяцев</li>
-          <li class="subscription__duration-item">12 месяцев</li>
-        </ul>
+          <ul class="subscription__duration-list">
+            <li class="subscription__duration-item subscription__duration-item--active">1 месяц</li>
+            <li class="subscription__duration-item">6 месяцев</li>
+            <li class="subscription__duration-item">12 месяцев</li>
+          </ul>
 
-        <ul class="subscription__rate-list">
-          <li class="rate-item">
-            <h3>С тренером</h3>
-            <span class="rate-item__schedule">12 занятий</span>
-            <span class="rate-item__price">5000</span>
-            <img src="./img/ruble.svg" alt="рубль" width="30" height="42">
-            <button class="button button--subscription" type="button">Купить абонемент</button>
-          </li>
-          <li class="rate-item">
-            <h3>Дневной</h3>
-            <span class="rate-item__schedule">с 8:00 до 17:00</span>
-            <span class="rate-item__price">1700</span>
-            <img src="./img/ruble.svg" alt="рубль" width="30" height="42">
-            <button class="button button--subscription" type="button">Купить абонемент</button>
-          </li>
-          <li class="rate-item">
-            <h3>Полный день</h3>
-            <span class="rate-item__schedule">с 8:00 до 22:00 </span>
-            <span class="rate-item__price">2700</span>
-            <img src="./img/ruble.svg" alt="рубль" width="30" height="42">
-            <button class="button button--subscription" type="button">Купить абонемент</button>
-          </li>
-        </ul>
+          <ul class="subscription__rate-list">
+
+            <div class="rate">
+              <li class="rate__item">
+                <h3>С тренером</h3>
+                <span class="rate__schedule">12 занятий</span>
+                <div class="reate__price-wrapper">
+                  <span class="rate__price">5000</span>
+                </div>
+                <button class="button button--subscription" type="button">Купить абонемент</button>
+              </li>
+            </div>
+
+            <div class="rate">
+              <li class="rate__item">
+                <h3>Дневной</h3>
+                <span class="rate__schedule">с 8:00 до 17:00</span>
+                <div class="reate__price-wrapper">
+                  <span class="rate__price rate__price--1700">1700</span>
+                </div>
+                <button class="button button--subscription" type="button">Купить абонемент</button>
+              </li>
+            </div>
+
+            <div class="rate">
+              <li class="rate__item">
+                <h3>Полный день</h3>
+                <span class="rate__schedule">с 8:00 до 22:00 </span>
+                <div class="reate__price-wrapper">
+                  <span class="rate__price rate__price--2700">2700</span>
+                </div>
+                <button class="button button--subscription" type="button">Купить абонемент</button>
+              </li>
+            </div>
+
+          </ul>
+        </div>
 
       </section>
 

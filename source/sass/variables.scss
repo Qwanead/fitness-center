@@ -1,11 +1,19 @@
 $default-color: #102654;
 $contrast-color: #ffffff;
-$gradient-start-color: #003d85;
-$gradient-end-color: #b80027;
+$gradient-start-color: #b80027;
+$gradient-end-color: #003d85;
+$gradient-border: 90%;
+$gradient-border-tablet: 94.9%;
+$background-color: #f8f9fc;
+$duration-list-color: rgba(16, 38, 84, 0.5);
+$duration-list-active-color: #102654;
+$duration-item-active-color: #d10a42;
+$rate-schedule-color: #495a7d;
+$rate-price-color: #103aae;
+$rate-price-shadow-color: #e8e8e8;
 
 $animation: 0.5s ease;
 
-$mobile-width: 320px;
 $tablet-width: 767px;
 $desktop-width: 1199px;
 $retina-dpi: 144dpi;
