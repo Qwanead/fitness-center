@@ -1,11 +1,11 @@
 .subscription {
-  min-height: 946px;
+  min-height: 971px;
 
   background-image:
     url("../../img/barbells-desktop@1x.png"),
     linear-gradient($background-color $gradient-border, $contrast-color $gradient-border);
   background-repeat: no-repeat;
-  background-position: 100% 112%;
+  background-position: 100% 106%;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image:

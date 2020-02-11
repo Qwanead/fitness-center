@@ -1,0 +1,73 @@
+.trainers {
+  padding-top: 123px;
+}
+
+.trainers__content-wrapper {
+  position: relative;
+
+  max-width: 1272px;
+  margin: 0 auto;
+}
+
+.trainers h2 {
+  display: block;
+
+  max-width: 1166px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  padding-left: 5px;
+
+  letter-spacing: 0.03em;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+}
+
+
+.trainers__controls {
+  position: absolute;
+  top: 58.1%;
+
+  width: 16px;
+  height: 32px;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: 0;
+
+  &--prev {
+    left: 0;
+
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    right: 0;
+
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+}
+
+// @media (max-width: $slider-breakpoint-width) {
+//   .trainers__content-wrapper {
+//     margin: 0 75px;
+//   }
+// }
+
+// @media (max-width: $desktop-width) {
+//   .trainers__content-wrapper {
+//     margin: 0 30px;
+//   }
+// }
+
+// @media (max-width: $desktop-width) {
+//   .trainers__content-wrapper {
+//     margin: 0;
+//   }
+// }

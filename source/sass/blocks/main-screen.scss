@@ -1,6 +1,11 @@
 .main-screen {
   color: $contrast-color;
-  background-image: radial-gradient(33.97% 69.22% at 16.03% 39.06%, $gradient-start-color, $gradient-end-color);
+  background-image: url("../../img/main-screen-bg-desktop@1x.jpg");
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image: url("../../img/main-screen-bg-desktop@2x.jpg");
+  }
 }
 
 .main-screen__content-wrapper {
@@ -122,6 +127,15 @@
 }
 
 @media (max-width: $desktop-width) {
+  .main-screen {
+    background-image: url("../../img/main-screen-bg-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("../../img/main-screen-bg-tablet@2x.jpg");
+    }
+  }
+
   .main-screen__content-wrapper {
     min-height: 554px;
     padding-top: 40px;
@@ -176,6 +190,15 @@
 }
 
 @media (max-width: $tablet-width) {
+  .main-screen {
+    background-image: url("../../img/main-screen-bg-mobile@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("../../img/main-screen-bg-mobile@2x.jpg");
+    }
+  }
+
   .main-screen__content-wrapper {
     min-height: 491px;
     padding-top: 20px;

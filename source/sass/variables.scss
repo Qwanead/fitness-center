@@ -2,7 +2,7 @@ $default-color: #102654;
 $contrast-color: #ffffff;
 $gradient-start-color: #b80027;
 $gradient-end-color: #003d85;
-$gradient-border: 90%;
+$gradient-border: 87.6%;
 $gradient-border-tablet: 94.9%;
 $background-color: #f8f9fc;
 $duration-list-color: rgba(16, 38, 84, 0.5);
@@ -11,10 +11,13 @@ $duration-item-active-color: #d10a42;
 $rate-schedule-color: #495a7d;
 $rate-price-color: #103aae;
 $rate-price-shadow-color: #e8e8e8;
+$trainer-info-bg-color: rgba(16, 38, 84, 0.89);
+$additional-info-color: #b6bdcc;
 
 $animation: 0.5s ease;
 
 $tablet-width: 767px;
 $desktop-width: 1199px;
+$slider-breakpoint-width: 1365px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

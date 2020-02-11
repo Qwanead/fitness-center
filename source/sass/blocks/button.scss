@@ -39,6 +39,16 @@
   }
 }
 
+.button--games {
+  width: 100%;
+  min-height: 71px;
+
+  &:hover {
+    color: $gradient-end-color;
+    border-color: $gradient-end-color;
+  }
+}
+
 @media (max-width: $desktop-width) {
   .button {
     width: 183px;
@@ -46,6 +56,16 @@
 
   .button--subscription {
     width: 100%;
+  }
+
+  .button--games {
+    width: 100%;
+    min-height: 40px;
+
+    border: 2px solid $contrast-color;
+
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 
