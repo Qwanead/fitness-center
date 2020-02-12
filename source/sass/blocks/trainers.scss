@@ -1,5 +1,6 @@
 .trainers {
   padding-top: 123px;
+  padding-bottom: 120px;
 }
 
 .trainers__content-wrapper {
@@ -68,6 +69,7 @@
 @media (max-width: $desktop-width) {
   .trainers {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .trainers h2 {
@@ -92,6 +94,7 @@
 @media (max-width: $tablet-width) {
   .trainers {
     padding-top: 72px;
+    padding-bottom: 70px;
   }
 
   .trainers__content-wrapper {

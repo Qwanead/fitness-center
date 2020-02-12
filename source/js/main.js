@@ -1,5 +1,9 @@
 'use strict';
 
+var Swiper = window.Swiper;
+var trainersControlsPrev = document.querySelector('.trainers__controls--prev');
+var trainersControlsNext = document.querySelector('.trainers__controls--next');
+
 var swiper = new Swiper('.swiper-trainers', {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -7,10 +11,6 @@ var swiper = new Swiper('.swiper-trainers', {
   slidesPerGroupSkip: 4,
   loop: true,
   loopFillGroupWithBlank: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   breakpoints: {
     // when window width is >= 320px
     320: {
@@ -36,10 +36,10 @@ var swiper = new Swiper('.swiper-trainers', {
   }
 });
 
-document.querySelector('.trainers__controls--prev').addEventListener('click', function () {
+trainersControlsPrev.addEventListener('click', function () {
   swiper.slidePrev();
 });
 
-document.querySelector('.trainers__controls--next').addEventListener('click', function () {
+trainersControlsNext.addEventListener('click', function () {
   swiper.slideNext();
 });
