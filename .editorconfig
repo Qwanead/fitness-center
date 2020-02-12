@@ -20,3 +20,15 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[swiper.scss]
+indent_size = none
+indent_style = none
+insert_final_newline = none
+trim_trailing_whitespace = none
+
+[vendor.js]
+indent_size = none
+indent_style = none
+insert_final_newline = none
+trim_trailing_whitespace = none

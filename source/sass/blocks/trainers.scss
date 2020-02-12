@@ -33,13 +33,18 @@
   height: 32px;
 
   cursor: pointer;
+  transition: transform $animation;
 
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   font-size: 0;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 
   &--prev {
     left: 0;
@@ -54,20 +59,54 @@
   }
 }
 
-// @media (max-width: $slider-breakpoint-width) {
-//   .trainers__content-wrapper {
-//     margin: 0 75px;
-//   }
-// }
+@media (max-width: $slider-breakpoint-width) {
+  .trainers__content-wrapper {
+    margin: 0 75px;
+  }
+}
 
-// @media (max-width: $desktop-width) {
-//   .trainers__content-wrapper {
-//     margin: 0 30px;
-//   }
-// }
+@media (max-width: $desktop-width) {
+  .trainers {
+    padding-top: 100px;
+  }
 
-// @media (max-width: $desktop-width) {
-//   .trainers__content-wrapper {
-//     margin: 0;
-//   }
-// }
+  .trainers h2 {
+    margin-bottom: 40px;
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .trainers__content-wrapper {
+    margin: 0 45px;
+  }
+
+  .trainers__controls {
+    top: 56.6%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .trainers {
+    padding-top: 72px;
+  }
+
+  .trainers__content-wrapper {
+    margin: 0 15px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .trainers__controls {
+    top: 57.3%;
+
+    width: 10px;
+    height: 19px;
+  }
+}
