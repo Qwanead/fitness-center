@@ -4,7 +4,7 @@ var Swiper = window.Swiper;
 var trainersControlsPrev = document.querySelector('.trainers__controls.controls--prev');
 var trainersControlsNext = document.querySelector('.trainers__controls.controls--next');
 
-var swiper = new Swiper('.swiper-trainers', {
+var trainersSwiper = new Swiper('.swiper-trainers', {
   slidesPerView: 4,
   spaceBetween: 30,
   slidesPerGroup: 4,
@@ -37,9 +37,29 @@ var swiper = new Swiper('.swiper-trainers', {
 });
 
 trainersControlsPrev.addEventListener('click', function () {
-  swiper.slidePrev();
+  trainersSwiper.slidePrev();
 });
 
 trainersControlsNext.addEventListener('click', function () {
-  swiper.slideNext();
+  trainersSwiper.slideNext();
+});
+
+var reviewsControlsPrev = document.querySelector('.reviews__controls.controls--prev');
+var reviewsControlsNext = document.querySelector('.reviews__controls.controls--next');
+
+var reviewsSwiper = new Swiper('.swiper-reviews', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  slidesPerGroup: 1,
+  slidesPerGroupSkip: 1,
+  loop: true,
+  loopFillGroupWithBlank: true
+});
+
+reviewsControlsPrev.addEventListener('click', function () {
+  reviewsSwiper.slidePrev();
+});
+
+reviewsControlsNext.addEventListener('click', function () {
+  reviewsSwiper.slideNext();
 });
