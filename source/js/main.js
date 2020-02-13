@@ -1,8 +1,8 @@
 'use strict';
 
 var Swiper = window.Swiper;
-var trainersControlsPrev = document.querySelector('.trainers__controls--prev');
-var trainersControlsNext = document.querySelector('.trainers__controls--next');
+var trainersControlsPrev = document.querySelector('.trainers__controls.controls--prev');
+var trainersControlsNext = document.querySelector('.trainers__controls.controls--next');
 
 var swiper = new Swiper('.swiper-trainers', {
   slidesPerView: 4,

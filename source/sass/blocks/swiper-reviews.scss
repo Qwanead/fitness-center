@@ -1,0 +1,37 @@
+.swiper-reviews {
+}
+
+.swiper-reviews__wrapper {
+
+}
+
+.swiper-reviews__slide {
+  display: flex;
+
+  width: 560px;
+  height: 242px;
+  padding: 62px;
+
+  color: $contrast-color;
+  background-color: $advantages-bg-color;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.swiper-reviews__image {
+  flex-shrink: 0;
+}
+
+.swiper-reviews__text {
+
+}
+
+.swiper-reviews__text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.swiper-reviews__text p {
+  font-size: 16px;
+  line-height: 140%;
+}

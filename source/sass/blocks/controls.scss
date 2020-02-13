@@ -1,0 +1,39 @@
+.controls {
+  position: absolute;
+
+  width: 16px;
+  height: 32px;
+
+  cursor: pointer;
+  transition: transform $animation;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  font-size: 0;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+
+  &--prev {
+    left: 0;
+
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    right: 0;
+
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .controls {
+    width: 10px;
+    height: 19px;
+  }
+}
