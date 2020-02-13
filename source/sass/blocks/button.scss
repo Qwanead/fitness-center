@@ -49,6 +49,16 @@
   }
 }
 
+.button--form {
+  width: 100%;
+  min-height: 55px;
+
+  border: 3px solid $contrast-color;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
 @media (max-width: $desktop-width) {
   .button {
     width: 183px;

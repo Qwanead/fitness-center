@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Swiper 5.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions

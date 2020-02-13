@@ -1,0 +1,67 @@
+.free-lesson {
+  width: 50%;
+
+  color: $contrast-color;
+  background-color: $default-color;
+}
+
+.free-lesson__content-wrapper {
+  max-width: 663px;
+  margin-left: auto;
+  padding-top: 66px;
+  padding-right: 171px;
+  padding-bottom: 69px;
+  padding-left: 82px;
+}
+
+.free-lesson h2 {
+  margin: 0;
+  margin-bottom: 30px;
+
+  letter-spacing: 0.03em;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+}
+
+.free-lesson__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 26px;
+}
+
+.free-lesson__form-wrapper input {
+  width: 46.2%;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
+
+  color: $contrast-color;
+  border: none;
+  border-bottom: 1px solid $contacts-border-color;
+  background-color: $default-color;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  &::placeholder {
+    color: $contrast-color;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: $slider-breakpoint-width) {
+  .free-lesson__content-wrapper {
+    padding-right: 25%;
+    padding-left: 12%;
+  }
+}
