@@ -1,14 +1,19 @@
 .promo {
-
+  padding-top: 123px;
+  padding-right: 103px;
+  padding-bottom: 50px;
+  padding-left: 103px;
 }
 
 .promo__content-wrapper {
   max-width: 1160px;
-  min-height: 462px;
   margin: 0 auto;
 }
 
 .promo h2 {
+  margin: 0;
+  margin-bottom: 47px;
+
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -17,50 +22,300 @@
   line-height: 49px;
 }
 
-.promo__unlimit-wrapper {
+.promo__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+
+.promo__unlimit-wrapper {
+  display: flex;
+  flex-shrink: 0;
+
+  width: 560px;
+  height: 462px;
+  margin-right: 40px;
+
+  color: $contrast-color;
+  background: $games-bg-color;
 }
 
 .promo__unlimit {
-
+  width: 50%;
+  padding-top: 34px;
+  padding-right: 34px;
+  padding-bottom: 34px;
+  padding-left: 45px;
 }
 
 .promo__unlimit-unit {
+  display: block;
 
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 156%;
 }
 
 .promo__unlimit-price {
+  display: block;
 
+  margin-top: -26px;
+
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 156%;
+}
+
+.promo__text-wrapper {
+  display: flex;
+  overflow: auto;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 69%;
+
+  &--unlimit {
+    height: 65%;
+  }
+}
+
+.promo__unlimit p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 140%;
 }
 
 .promo__more {
+  transition: color $animation, border-color $animation;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
+  border-bottom: 1px solid $default-color;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  &:hover {
+    color: $gradient-start-color;
+    border-color: $gradient-start-color;
+  }
 }
 
 .promo__more--unlimit {
+  color: $contrast-color;
+  border-bottom: 1px solid $contrast-color;
 
+  font-size: 14px;
+  line-height: 16px;
+
+  &:hover {
+    color: $default-color;
+    border-color: $default-color;
+  }
 }
 
 .promo__illustration {
+  width: 50%;
+  height: 100%;
 
+  background-image: url("../../img/promo-girl-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image: url("../../img/promo-girl-desktop@2x.jpg");
+  }
+}
+
+.promo__items-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
 }
 
 .promo__item-wrapper {
+  height: 211px;
+  margin-bottom: 40px;
+  padding: 7px;
 
+  background-image: linear-gradient(135deg, $gradient-start-color, $gradient-end-color);
+  background-repeat: no-repeat;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .promo__item {
+  width: 100%;
+  height: 100%;
+  padding-top: 18px;
+  padding-right: 28px;
+  padding-bottom: 18px;
+  padding-left: 28px;
 
+  background-color: $contrast-color;
 }
 
 .promo__item h3 {
+  margin: 0;
+  margin-bottom: 3px;
 
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 150%;
 }
 
 .promo__item p {
+  margin: 0;
 
+  font-size: 16px;
+  line-height: 140%;
 }
 
-.promo__item a {
+@media (max-width: $desktop-width) {
+  .promo {
+    padding-top: 101px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
 
+  .promo h2 {
+    margin-bottom: 37px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .promo__cards-wrapper {
+    flex-direction: column;
+  }
+
+
+  .promo__unlimit-wrapper {
+    justify-content: space-between;
+
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .promo__unlimit {
+    width: 279px;
+  }
+
+  .promo__illustration {
+    width: 399px;
+
+    background-image: url("../../img/promo-girl-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-girl-tablet@2x.jpg");
+    }
+  }
+
+  .promo__items-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .promo__item-wrapper {
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:first-child .promo__item {
+      padding-right: 55px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    padding-top: 71px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    text-align: center;
+  }
+
+  .promo h2 {
+    margin-bottom: 41px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+
+  .promo__unlimit-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: auto;
+  }
+
+  .promo__unlimit {
+    width: 100%;
+    height: auto;
+    min-height: 299px;
+    padding: 35px 45px;
+  }
+
+  .promo__text-wrapper {
+    align-items: center;
+
+    height: auto;
+  }
+
+  .promo__unlimit p {
+    margin-top: -5px;
+    margin-bottom: 30px;
+  }
+
+  .promo__illustration {
+    width: 100%;
+    height: 299px;
+
+    background-image: url("../../img/promo-girl-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-girl-mobile@2x.jpg");
+    }
+  }
+
+  .promo__items-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .promo__item-wrapper {
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:first-child .promo__item {
+      padding-right: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .promo__item {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+  }
+
+  .promo__item p {
+    margin-bottom: 22px;
+  }
 }

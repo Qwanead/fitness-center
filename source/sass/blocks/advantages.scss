@@ -134,7 +134,6 @@
   }
 }
 
-
 .advantages__item-info {
   width: 208px;
 }
@@ -217,9 +216,6 @@
     font-size: 20px;
   }
 
-  // .advantages__item p {
-  // }
-
   .advantages__item--area {
     order: 1;
 
@@ -263,8 +259,6 @@
     }
 
     & .advantages__item-info {
-      // width: 226px;
-      // padding-left: 30px;
       transform: none;
     }
   }
@@ -288,11 +282,6 @@
 
       transform: none;
     }
-
-    // & .advantages__item-info {
-    //   width: 260px;
-    //   padding-left: 30px;
-    // }
   }
 
   .advantages__item--experience {
@@ -351,12 +340,7 @@
     padding-left: 0;
   }
 
-  // .advantages__content-wrapper {
-  //   max-width: auto;
-  // }
-
   .advantages__content-wrapper h2 {
-    // margin-bottom: 49px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -385,12 +369,6 @@
   }
 
   .advantages__item--area {
-    // & img {
-    //   width: 89px;
-    //   height: 60px;
-    //   margin-top: 0;
-    // }
-
     & .advantages__item-info {
       width: 185px;
       padding-left: 0;
@@ -398,51 +376,26 @@
 
     & h3 {
       margin-top: 10px;
-      // margin-bottom: 0;
     }
   }
 
   .advantages__item--comfort {
-    // order: 4;
     padding-top: 0;
-    // padding-left: 0;
-
-    // & img {
-    //   width: 89px;
-    //   height: 60px;
-
-    //   transform: none;
-    // }
 
     & h3 {
       margin-top: 7px;
-
-      // transform: none;
     }
 
     & .advantages__item-info {
-      // width: 226px;
       padding-left: 0;
     }
   }
 
   .advantages__item--parking {
-    // order: 2;
     padding-left: 0;
-
-    // border-bottom: none;
-
-    // & img {
-    //   width: 59px;
-    //   height: 60px;
-
-    //   transform: none;
-    // }
 
     & h3 {
       margin-top: 9px;
-
-      // transform: none;
     }
 
     & .advantages__item-info {
@@ -457,28 +410,15 @@
     padding-top: 0;
     padding-left: 0;
 
-    // & img {
-    //   width: 59px;
-    //   height: 60px;
-
-    //   transform: none;
-    // }
-
     & .advantages__item-info {
       width: 235px;
       margin-top: 0;
       padding-left: 0;
-
-      // transform: none;
     }
 
     & h3 {
       margin-top: 5px;
     }
-
-    // & p {
-    //   transform: none;
-    // }
   }
 
   .advantages__item-equipment {
