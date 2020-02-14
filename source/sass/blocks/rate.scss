@@ -76,22 +76,6 @@
   font-weight: bold;
   line-height: 150%;
 
-  // &::before {
-  //   position: absolute;
-  //   z-index: -1;
-  //   top: -54px;
-  //   left: -20px;
-
-  //   content: "5000";
-
-  //   opacity: 0.48;
-  //   color: $rate-price-shadow-color;
-
-  //   font-size: 100px;
-  //   font-weight: bold;
-  //   line-height: 150%;
-  // }
-
   &::after {
     position: absolute;
     z-index: 2;

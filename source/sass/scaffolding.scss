@@ -6,10 +6,6 @@ html {
 body {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
   min-width: 320px;
   height: 100%;
 
@@ -20,6 +16,18 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 140%;
+}
+
+main {
+  min-height: calc(100vh - 108px);
+
+  @media (max-width: $desktop-width) {
+    min-height: calc(100vh - 114px);
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: calc(100vh - 260px);
+  }
 }
 
 *,
