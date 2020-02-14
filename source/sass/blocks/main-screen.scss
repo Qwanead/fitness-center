@@ -1,11 +1,11 @@
 .main-screen {
   color: $contrast-color;
   background-color: $gradient-end-color;
-  background-image: url("../../img/main-screen-bg-desktop@1x.jpg");
+  background-image: url("/img/main-screen-bg-desktop@1x.jpg");
   background-size: cover;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/main-screen-bg-desktop@2x.jpg");
+    background-image: url("/img/main-screen-bg-desktop@2x.jpg");
   }
 }
 
@@ -21,12 +21,12 @@
   padding-bottom: 50px;
   padding-left: 103px;
 
-  background-image: url("../../img/super-man-desktop-1x.jpg");
+  background-image: url("/img/super-man-desktop-1x.jpg");
   background-repeat: no-repeat;
   background-position: 563px center;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/super-man-desktop@2x.jpg");
+    background-image: url("/img/super-man-desktop@2x.jpg");
     background-size: 500px 556px, auto;
   }
 }
@@ -129,11 +129,11 @@
 
 @media (max-width: $desktop-width) {
   .main-screen {
-    background-image: url("../../img/main-screen-bg-tablet@1x.jpg");
+    background-image: url("/img/main-screen-bg-tablet@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/main-screen-bg-tablet@2x.jpg");
+      background-image: url("/img/main-screen-bg-tablet@2x.jpg");
     }
   }
 
@@ -143,11 +143,11 @@
     padding-right: 45px;
     padding-left: 45px;
 
-    background-image: url("../../img/super-man-tablet@1x.jpg");
+    background-image: url("/img/super-man-tablet@1x.jpg");
     background-position: 89.8% center;
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/super-man-tablet@2x.jpg");
+      background-image: url("/img/super-man-tablet@2x.jpg");
       background-size: 324px 390px, auto;
     }
   }
@@ -192,11 +192,11 @@
 
 @media (max-width: $tablet-width) {
   .main-screen {
-    background-image: url("../../img/main-screen-bg-mobile@1x.jpg");
+    background-image: url("/img/main-screen-bg-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/main-screen-bg-mobile@2x.jpg");
+      background-image: url("/img/main-screen-bg-mobile@2x.jpg");
     }
   }
 
