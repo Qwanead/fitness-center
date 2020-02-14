@@ -66,26 +66,20 @@
   line-height: 156%;
 }
 
-.promo__text-wrapper {
-  display: flex;
+.promo__text-wrapper p {
   overflow: auto;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
 
-  height: 69%;
-
-  &--unlimit {
-    height: 65%;
-  }
-}
-
-.promo__unlimit p {
+  height: 89px;
   margin: 0;
 
   font-size: 18px;
   line-height: 140%;
 }
+
+.promo__text-wrapper--unlimit p {
+  height: 237px;
+}
+
 
 .promo__more {
   transition: color $animation, border-color $animation;
@@ -269,14 +263,20 @@
   }
 
   .promo__text-wrapper {
-    align-items: center;
-
-    height: auto;
+    text-align: center;
   }
 
   .promo__unlimit p {
     margin-top: -5px;
     margin-bottom: 30px;
+  }
+
+  .promo__text-wrapper p {
+    height: auto;
+  }
+
+  .promo__text-wrapper--unlimit p {
+    height: auto;
   }
 
   .promo__illustration {
