@@ -15,7 +15,6 @@ if (trainersControlsPrev && trainersControlsNext) {
     loop: true,
     loopFillGroupWithBlank: true,
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 0,
