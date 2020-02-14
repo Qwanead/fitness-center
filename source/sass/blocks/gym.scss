@@ -57,11 +57,11 @@
 
   cursor: pointer;
 
-  background-image: url("/img/gym-video-desktop@1x.jpg");
+  background-image: url("./../img/gym-video-desktop@1x.jpg");
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("/img/gym-video-desktop@2x.jpg");
+    background-image: url("./../img/gym-video-desktop@2x.jpg");
     background-size: cover;
   }
 
@@ -80,10 +80,10 @@
     content: "";
     transition: transform $animation;
 
-    background-image: url("/img/play-button-desktop@1x.png");
+    background-image: url("./../img/play-button-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("/img/play-button-desktop@1x.png");
+      background-image: url("./../img/play-button-desktop@1x.png");
       background-size: cover;
     }
   }
@@ -142,10 +142,10 @@
     bottom: 94px;
     left: calc(50% - 133px);
 
-    background-image: url("/img/gym-video-tablet@1x.jpg");
+    background-image: url("./../img/gym-video-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("/img/gym-video-tablet@2x.jpg");
+      background-image: url("./../img/gym-video-tablet@2x.jpg");
     }
 
     &::after {
@@ -155,10 +155,10 @@
       width: 73px;
       height: 73px;
 
-      background-image: url("/img/play-button-tablet@1x.png");
+      background-image: url("./../img/play-button-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-        background-image: url("/img/play-button-tablet@2x.png");
+        background-image: url("./../img/play-button-tablet@2x.png");
       }
     }
   }
@@ -219,11 +219,11 @@
     bottom: 0;
     left: 0;
 
-    background-image: url("/img/gym-video-mobile@1x.jpg");
+    background-image: url("./../img/gym-video-mobile@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image: url("/img/gym-video-mobile@2x.jpg");
+      background-image: url("./../img/gym-video-mobile@2x.jpg");
     }
   }
 

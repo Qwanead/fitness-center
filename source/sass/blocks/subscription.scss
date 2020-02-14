@@ -2,14 +2,14 @@
   min-height: 971px;
 
   background-image:
-    url("/img/barbells-desktop@1x.png"),
+    url("./../img/barbells-desktop@1x.png"),
     linear-gradient($background-color $gradient-border, $contrast-color $gradient-border);
   background-repeat: no-repeat;
   background-position: 100% 106%;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image:
-      url("/img/barbells-desktop@2x.png"),
+      url("./../img/barbells-desktop@2x.png"),
       linear-gradient($background-color $gradient-border, $contrast-color $gradient-border);
     background-size: 287px 492px, auto;
   }
@@ -103,13 +103,13 @@
     min-height: auto;
 
     background-image:
-      url("/img/barbells-tablet@1x.png"),
+      url("./../img/barbells-tablet@1x.png"),
       linear-gradient($background-color $gradient-border-tablet, $contrast-color $gradient-border-tablet);
     background-position: 100% 102%;
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
       background-image:
-        url("/img/barbells-tablet@2x.png"),
+        url("./../img/barbells-tablet@2x.png"),
         linear-gradient($background-color $gradient-border, $contrast-color $gradient-border);
       background-size: 347px 444px, auto;
     }
@@ -146,7 +146,7 @@
     min-height: auto;
 
     background-image:
-      url("/img/barbells-tablet@1x.png"),
+      url("./../img/barbells-tablet@1x.png"),
       linear-gradient($background-color $gradient-border-tablet, $contrast-color $gradient-border-tablet);
     background-position: 100% 102%;
   }
