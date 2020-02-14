@@ -39,6 +39,8 @@
   padding-bottom: 5px;
   padding-left: 0;
 
+  transition: border-bottom $animation;
+
   color: $contrast-color;
   border: none;
   border-bottom: 1px solid $contacts-border-color;
@@ -57,11 +59,73 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  &:hover {
+    border-bottom: 1px solid $duration-item-active-color;
+  }
 }
 
 @media (max-width: $slider-breakpoint-width) {
   .free-lesson__content-wrapper {
     padding-right: 25%;
     padding-left: 12%;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .free-lesson {
+    width: 100%;
+  }
+
+  .free-lesson__content-wrapper {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    padding-top: 54px;
+    padding-right: 163px;
+    padding-left: 133px;
+  }
+
+  .free-lesson h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .free-lesson__form-wrapper {
+    margin-bottom: 27px;
+  }
+
+  .free-lesson__form-wrapper input {
+    width: 43.6%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .free-lesson__content-wrapper {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    padding-top: 72px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .free-lesson h2 {
+    margin-bottom: 33px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .free-lesson__form-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-bottom: 5px;
+  }
+
+  .free-lesson__form-wrapper input {
+    width: 100%;
+    margin-bottom: 33px;
   }
 }

@@ -3,3 +3,15 @@
 
   padding-top: 80px;
 }
+
+@media (max-width: $desktop-width) {
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .contacts-wrapper {
+    padding-top: 30px;
+  }
+}
