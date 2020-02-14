@@ -76,21 +76,21 @@
   font-weight: bold;
   line-height: 150%;
 
-  &::before {
-    position: absolute;
-    z-index: -1;
-    top: -54px;
-    left: -20px;
+  // &::before {
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: -54px;
+  //   left: -20px;
 
-    content: "5000";
+  //   content: "5000";
 
-    opacity: 0.48;
-    color: $rate-price-shadow-color;
+  //   opacity: 0.48;
+  //   color: $rate-price-shadow-color;
 
-    font-size: 100px;
-    font-weight: bold;
-    line-height: 150%;
-  }
+  //   font-size: 100px;
+  //   font-weight: bold;
+  //   line-height: 150%;
+  // }
 
   &::after {
     position: absolute;
@@ -114,6 +114,20 @@
   &--2700::before {
     content: "2700";
   }
+}
+
+.rate__price-shadow {
+  position: absolute;
+  z-index: -1;
+  top: -54px;
+  left: -20px;
+
+  opacity: 0.48;
+  color: $rate-price-shadow-color;
+
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 150%;
 }
 
 .rate__price-wrapper img {

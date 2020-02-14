@@ -12,7 +12,7 @@
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="./js/vendor.js"></script>
+    <script src="./js/picturefill.js" async></script>
   </head>
 
   <body>
@@ -41,7 +41,7 @@
               </ul>
             </div>
 
-            <button class="button button--main-screen" type="button">Купить абонемент</button>
+            <a href="#subscription-id"><button class="button button--main-screen" type="button">Купить абонемент</button></a href="#subscription-id">
           </div>
 
 
@@ -54,7 +54,7 @@
 
       </section>
 
-      <section class="gym">
+      <section class="gym" id="gym-id">
         <div class="gym__content-wrapper">
           <div class="gym__text-wrapper">
             <h2>Тренажерный зал</h2>
@@ -86,7 +86,7 @@
         </div>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" id="subscription-id">
         <div class="subscription__content-wrapper">
           <h2>Абонементы</h2>
 
@@ -103,9 +103,11 @@
                 <h3>С тренером</h3>
                 <span class="rate__schedule">12 занятий</span>
                 <div class="rate__price-wrapper">
-                  <span class="rate__price">5000</span>
+                  <span class="rate__price">
+                    <span class="rate__price-shadow">5000</span>5000
+                  </span>
                 </div>
-                <button class="button button--subscription" type="button">Купить абонемент</button>
+                <a href="#"><button class="button button--subscription" type="button">Купить абонемент</button></a>
               </div>
             </li>
 
@@ -114,9 +116,11 @@
                 <h3>Дневной</h3>
                 <span class="rate__schedule">с 8:00 до 17:00</span>
                 <div class="rate__price-wrapper">
-                  <span class="rate__price rate__price--1700">1700</span>
+                  <span class="rate__price">
+                    <span class="rate__price-shadow">1700</span>1700
+                  </span>
                 </div>
-                <button class="button button--subscription" type="button">Купить абонемент</button>
+                <a href="#"><button class="button button--subscription" type="button">Купить абонемент</button></a>
               </div>
             </li>
 
@@ -125,9 +129,11 @@
                 <h3>Полный день</h3>
                 <span class="rate__schedule">с 8:00 до 22:00 </span>
                 <div class="rate__price-wrapper">
-                  <span class="rate__price rate__price--2700">2700</span>
+                  <span class="rate__price">
+                    <span class="rate__price-shadow">2700</span>2700
+                  </span>
                 </div>
-                <button class="button button--subscription" type="button">Купить абонемент</button>
+                <a href="#"><button class="button button--subscription" type="button">Купить абонемент</button></a href="#">
               </div>
             </li>
 
@@ -165,14 +171,14 @@
 
             <p>Ежегодные соревнования по CrossFit</p>
 
-            <button class="button button--games" type="button">Заполнить заявку</button>
+            <a href="#"><button class="button button--games" type="button">Заполнить заявку</button></a href="#">
           </div>
 
           <div class="games__illustration"></div>
         </div>
       </section>
 
-      <section class="trainers">
+      <section class="trainers" id="trainers-id">
         <div class="trainers__content-wrapper">
           <h2>Тренеры</h2>
 
@@ -426,7 +432,7 @@
         </div>
       </section>
 
-      <section class="promo">
+      <section class="promo" id="promo-id">
         <div class="promo__content-wrapper">
           <h2>Акции</h2>
 
@@ -585,10 +591,10 @@
 
         <nav class="footer__site-map">
           <ul class="footer__site-map-list">
-            <li class="footer__site-map-item"><a href="#">Услуги</a></li>
-            <li class="footer__site-map-item"><a href="#">Абонементы</a></li>
-            <li class="footer__site-map-item"><a href="#">Акции</a></li>
-            <li class="footer__site-map-item"><a href="#">Тренеры</a></li>
+            <li class="footer__site-map-item"><a href="#gym-id">Услуги</a></li>
+            <li class="footer__site-map-item"><a href="#subscription-id">Абонементы</a></li>
+            <li class="footer__site-map-item"><a href="#promo-id">Акции</a></li>
+            <li class="footer__site-map-item"><a href="#trainers-id">Тренеры</a></li>
             <li class="footer__site-map-item"><a href="#">Расписание</a></li>
           </ul>
         </nav>
@@ -601,7 +607,8 @@
       </div>
 
     </footer>
-    <!-- <script src="./js/vendor.js"></script> -->
+
+    <script src="./js/vendor.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

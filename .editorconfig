@@ -32,3 +32,9 @@ indent_size = none
 indent_style = none
 insert_final_newline = none
 trim_trailing_whitespace = none
+
+[picturefill.js]
+indent_size = none
+indent_style = none
+insert_final_newline = none
+trim_trailing_whitespace = none
