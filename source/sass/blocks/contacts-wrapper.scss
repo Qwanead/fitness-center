@@ -7,10 +7,12 @@
 @media (max-width: $desktop-width) {
   .contacts-wrapper {
     flex-direction: column;
+
+    padding-top: 60px;
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .contacts-wrapper {
     padding-top: 30px;
   }
