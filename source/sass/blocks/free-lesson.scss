@@ -60,8 +60,11 @@
     line-height: 16px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-bottom: 1px solid $duration-item-active-color;
+    outline: none;
   }
 }
 
