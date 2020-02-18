@@ -14,8 +14,12 @@
 
   font-size: 0;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     transform: scale(1.5);
+
+    outline: none;
   }
 
   &--prev {

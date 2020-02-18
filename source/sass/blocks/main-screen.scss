@@ -21,13 +21,27 @@
   padding-bottom: 50px;
   padding-left: 103px;
 
-  background-image: url("./../img/super-man-desktop-1x.jpg");
   background-repeat: no-repeat;
-  background-position: 563px center;
 
-  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("./../img/super-man-desktop@2x.jpg");
-    background-size: 500px 556px, auto;
+
+  &::after {
+    position: absolute;
+    top: 51px;
+    left: 563px;
+
+    width: 36.6%;
+    height: 556px;
+
+    content: "";
+
+    background-image: url("./../img/super-man-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("./../img/super-man-desktop@2x.jpg");
+    }
   }
 }
 
@@ -87,7 +101,7 @@
 
 .main-screen__features-list {
   position: absolute;
-  bottom: 145px;
+  top: 300px;
   left: 20px;
 
   margin: 0;
@@ -150,6 +164,11 @@
       background-image: url("./../img/super-man-tablet@2x.jpg");
       background-size: 324px 390px, auto;
     }
+
+    &::after {
+      background-image: none;
+      display: none;
+    }
   }
 
   .main-screen__tel {
@@ -181,7 +200,7 @@
   }
 
   .main-screen__features-list {
-    bottom: 117px;
+    top: 204px;
     left: 1px;
   }
 
@@ -243,7 +262,7 @@
   }
 
   .main-screen__features-list {
-    bottom: 16px;
+    top: 120px;
     left: 0;
   }
 

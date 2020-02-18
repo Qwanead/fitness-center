@@ -28,11 +28,6 @@ if (trainersControlsPrev && trainersControlsNext) {
         slidesPerGroup: 2
       },
       1200: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3
-      },
-      1366: {
         slidesPerView: 4,
         slidesPerGroup: 4,
         spaceBetween: 40

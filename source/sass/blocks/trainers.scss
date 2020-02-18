@@ -34,6 +34,10 @@
   .trainers__content-wrapper {
     margin: 0 75px;
   }
+
+  .trainers__controls {
+    top: 50%;
+  }
 }
 
 @media (max-width: $desktop-width) {
