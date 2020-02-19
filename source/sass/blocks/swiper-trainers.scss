@@ -94,6 +94,35 @@
   .swiper-trainers {
     max-width: 860px;
   }
+
+  .swiper-trainers__info {
+    top: 56%;
+
+    width: 185px;
+    height: 209.19px;
+  }
+
+  .swiper-trainers__slide:hover .swiper-trainers__info {
+    padding-top: 0;
+
+    & h3 {
+      margin-top: 20px;
+    }
+  }
+
+  .swiper-trainers__additional-info {
+    & span {
+      margin-bottom: 10px;
+    }
+
+    & ul {
+      padding-left: 20px;
+    }
+
+    & li {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -110,7 +139,32 @@
   }
 
   .swiper-trainers__info {
+    top: 83%;
+
     width: 268px;
+    height: 100%;
+  }
+
+  .swiper-trainers__slide:hover .swiper-trainers__info {
+    padding-top: 50px;
+
+    & h3 {
+      margin-top: 0;
+    }
+  }
+
+  .swiper-trainers__additional-info {
+    & span {
+      margin-bottom: 33px;
+    }
+
+    & ul {
+      padding-left: 40px;
+    }
+
+    & li {
+      margin-bottom: 13px;
+    }
   }
 }
 
