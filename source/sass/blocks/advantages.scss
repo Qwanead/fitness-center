@@ -51,11 +51,19 @@
 }
 
 .advantages__item p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+
   margin: 0;
+
+  text-overflow: ellipsis;
 
   font-size: 16px;
   font-weight: 300;
   line-height: 140%;
+
+  -webkit-line-clamp: 2;
 }
 
 .advantages__item--area {
@@ -139,6 +147,7 @@
 }
 
 .advantages__item-equipment {
+  overflow: hidden;
   flex-basis: 307px;
 
   width: 240px;
@@ -173,10 +182,18 @@
 }
 
 .advantages__item-equipment p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+
   margin: 0;
+
+  text-overflow: ellipsis;
 
   font-size: 16px;
   line-height: 150%;
+
+  -webkit-line-clamp: 4;
 }
 
 @media (max-width: $desktop-width) {
