@@ -76,15 +76,41 @@ var onAnchorClick = function (evt) {
   document.querySelector(evt.currentTarget.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
 };
 
-subscriptionLink.addEventListener('click', onAnchorClick);
-subscriptionFooterLink.addEventListener('click', onAnchorClick);
-gymFooterLink.addEventListener('click', onAnchorClick);
-promoFooterLink.addEventListener('click', onAnchorClick);
-trainersFooterLink.addEventListener('click', onAnchorClick);
+if (subscriptionLink) {
+  subscriptionLink.addEventListener('click', onAnchorClick);
+}
+
+if (subscriptionFooterLink) {
+  subscriptionFooterLink.addEventListener('click', onAnchorClick);
+}
+
+if (gymFooterLink) {
+  gymFooterLink.addEventListener('click', onAnchorClick);
+}
+
+if (promoFooterLink) {
+  promoFooterLink.addEventListener('click', onAnchorClick);
+}
+
+if (trainersFooterLink) {
+  trainersFooterLink.addEventListener('click', onAnchorClick);
+}
 
 // IMaskJS
 
-window.iMaskJS(document.getElementById('tel-id'), {mask: '+{7}(000)000-00-00'});
+var telephone = document.querySelector('#tel-id');
+
+if (telephone) {
+  window.iMaskJS(telephone, {mask: '+{7}(000)000-00-00'});
+
+  telephone.addEventListener('input', function () {
+    if (telephone.validity.patternMismatch) {
+      telephone.setCustomValidity('Введите номер телефона в формате: +7(123)456-78-90');
+    } else {
+      telephone.setCustomValidity('');
+    }
+  });
+}
 
 // Табы
 var ELEMENT_COUNT = 3;
