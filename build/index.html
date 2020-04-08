@@ -78,10 +78,18 @@
               <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile@1x.webp 1x, ./img/gym-mobile@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/gym-desktop@1x.webp 1x, ./img/gym-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="./img/gym-mobile@1x.jpg 1x, ./img/gym-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)" srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
               <!-- 1х: 660px; 2x: 1320px -->
-              <img src="./img/gym-desktop@1x.jpg" srcset="./img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажёрный зал">
+              <img srcset="./img/gym-mobile@1x.jpg 320w,
+                  ./img/gym-tablet@1x.jpg 678w,
+                  ./img/gym-desktop@1x.jpg 660w,
+                  ./img/gym-mobile@2x.jpg 640w,
+                  ./img/gym-tablet@2x.jpg 1356w,
+                  ./img/gym-desktop@2x.jpg 1320w" sizes="(max-width: 767px) 320px,
+                  (max-width: 1199px) 678px,
+                  ((max-width: 767px) and (min-resolution: 1.5dppx) and (min-resolution: 144dpi)) 640px,
+                  ((max-width: 1199px) and (min-resolution: 1.5dppx) and (min-resolution: 144dpi)) 1356px,
+                  ((min-resolution: 1.5dppx) and (min-resolution: 144dpi)) 1320px,
+                  660px" src="./img/gym-desktop@1x.jpg" width="660" height="401" alt="Тренажёрный зал">
             </picture>
           </div>
 
