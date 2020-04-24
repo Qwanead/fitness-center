@@ -1,0 +1,61 @@
+<div class="banner visually-hidden" id="banner-vkonline">
+  <div class="banner__wrapper">
+    <p class="banner__desktop-text">
+      Помощь бизнесу на карантине: удвоение бюджета на рекламу, полезные советы и скидки от партнёров.
+    </p>
+    <a class="banner__desktop-link" href="https://vk.com/biz/online" target="_blank">Узнать больше</a>
+    <button>Закрыть</button>
+  </div>
+</div>
+
+<div class="banner banner--mobile visually-hidden" id="banner-vkonline-mobile">
+  <a class="banner__mobile-link-wrapper" href="https://vk.com/biz/online" target="_blank">
+    <div class="banner__wrapper">
+      <p class="banner__modile-text">
+        Помощь бизнесу на карантине: удвоение бюджета на рекламу, полезные советы и скидки от партнёров. <span class="banner__mobile-link">Узнать больше</span>
+      </p>
+    </div>
+  </a>
+  <button>Закрыть</button>
+</div>
+
+<script>
+  'use strict';
+
+  var banner = document.querySelector('#banner-vkonline');
+  var bannerMobile = document.querySelector('#banner-vkonline-mobile');
+
+  var closeButton = banner.querySelector('button');
+  var closeButtonMobile = bannerMobile.querySelector('button');
+
+  var wasBannerClosed = false;
+  var isStorageSupport = true;
+
+  try {
+    wasBannerClosed = localStorage.getItem("wasBannerClosed");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  var isPossibleShowBanner = banner && bannerMobile && !wasBannerClosed && isStorageSupport;
+
+  if (isPossibleShowBanner) {
+    var onCloseClick = function (evt) {
+      evt.preventDefault();
+
+      banner.classList.add('visually-hidden');
+      bannerMobile.classList.add('visually-hidden');
+
+      closeButton.removeEventListener('click', onCloseClick);
+      closeButtonMobile.removeEventListener('click', onCloseClick);
+
+      localStorage.setItem("wasBannerClosed", true);
+    };
+
+    banner.classList.remove('visually-hidden');
+    bannerMobile.classList.remove('visually-hidden');
+
+    closeButton.addEventListener('click', onCloseClick);
+    closeButtonMobile.addEventListener('click', onCloseClick);
+  }
+</script>
