@@ -384,14 +384,14 @@
       closeButton.addEventListener('click', onCloseClick);
       closeButtonMobile.addEventListener('click', onCloseClick);
 
-      // function updateVars() {
-      //   let vh = window.innerHeight * 0.01;
-      //   document.documentElement.style.setProperty('--vh', `${vh}px`);
-      //   document.documentElement.style.setProperty('--bannerHeight', `${bannerMobile.offsetHeight}px`);
-      // }
+      function updateVars() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        document.documentElement.style.setProperty('--bannerHeight', `${bannerMobile.offsetHeight}px`);
+      }
 
-      // updateVars();
-      // window.addEventListener('resize', updateVars);
+      updateVars();
+      window.addEventListener('resize', updateVars);
     }
   });
 

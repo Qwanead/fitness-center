@@ -136,9 +136,9 @@ body {
   }
 
   .banner--mobile {
-    /* top: calc(var(--vh, 1vh) * 100 - var(--bannerHeight)); */
-    /* bottom: auto; */
-    bottom: 0;
+    top: calc(var(--vh, 1vh) * 100 - var(--bannerHeight));
+    bottom: auto;
+    /* bottom: 0; */
 
     display: table;
 
