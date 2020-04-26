@@ -136,10 +136,11 @@ body {
   }
 
   .banner--mobile {
-    top: calc(var(--vh, 1vh) * 100 - var(--bannerHeight));
-    bottom: auto;
+    /* top: calc(var(--vh, 1vh) * 100 - var(--bannerHeight)); */
+    /* bottom: auto; */
+    bottom: 0;
 
-    display: block;
+    display: table;
 
     width: 100%;
     height: auto;
