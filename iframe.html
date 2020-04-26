@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="margin: 0;">
+  <iframe class="biz_liga_iframe" src="/cases" frameborder="0" style="display: block; width: 100%; height: 100vh;"></iframe>
+
+  <script>
+    window.addEventListener('message', function(event) {
+      let filters = event.data['filters'];
+
+      if (filters) {
+        window.location.href = '#' + filters;
+      }
+
+      if(event.data == 'ready') {
+        sendFrame();
+      }
+    });
+
+    const sendFrame = function(){
+      const hash = window.location.hash.substring(1);
+      document.querySelector('.biz_liga_iframe').contentWindow.postMessage({"filtersFromParent": hash}, '*');
+    }
+  </script>
+
+
+  <div class="banner visually-hidden" id="banner-vkonline">
+  <div class="banner__wrapper">
+    <p class="banner__desktop-text">
+      Помощь бизнесу на карантине: удвоение бюджета на рекламу, полезные советы и скидки от партнёров.
+    </p>
+    <a class="banner__desktop-link" href="https://vk.com/biz/online" target="_blank">Узнать больше</a>
+    <button>Закрыть</button>
+  </div>
+</div>
+
+<div class="banner banner--mobile visually-hidden" id="banner-vkonline-mobile">
+  <a class="banner__mobile-link-wrapper" href="https://vk.com/biz/online" target="_blank">
+    <div class="banner__wrapper">
+      <p class="banner__modile-text">
+        Помощь бизнесу на карантине: удвоение бюджета на рекламу, полезные советы и скидки от партнёров. <span class="banner__mobile-link">Узнать больше</span>
+      </p>
+    </div>
+  </a>
+  <button>Закрыть</button>
+</div>
+
+<script>
+  'use strict';
+
+  var banner = document.querySelector('#banner-vkonline');
+  var bannerMobile = document.querySelector('#banner-vkonline-mobile');
+
+  var closeButton = banner.querySelector('button');
+  var closeButtonMobile = bannerMobile.querySelector('button');
+
+  var wasBannerClosed = false;
+  var isStorageSupport = true;
+
+  try {
+    wasBannerClosed = localStorage.getItem("wasBannerClosed");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  var isPossibleShowBanner = banner && bannerMobile && !wasBannerClosed && isStorageSupport;
+
+  if (isPossibleShowBanner) {
+    var onCloseClick = function (evt) {
+      evt.preventDefault();
+
+      banner.classList.add('visually-hidden');
+      bannerMobile.classList.add('visually-hidden');
+
+      closeButton.removeEventListener('click', onCloseClick);
+      closeButtonMobile.removeEventListener('click', onCloseClick);
+
+      localStorage.setItem("wasBannerClosed", true);
+    };
+
+    banner.classList.remove('visually-hidden');
+    bannerMobile.classList.remove('visually-hidden');
+
+    closeButton.addEventListener('click', onCloseClick);
+    closeButtonMobile.addEventListener('click', onCloseClick);
+
+    function updateVars() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      document.documentElement.style.setProperty('--bannerHeight', `${bannerMobile.offsetHeight}px`);
+    }
+
+    updateVars();
+    window.addEventListener('resize', updateVars);
+  }
+</script>
+
+</body>
+</html>

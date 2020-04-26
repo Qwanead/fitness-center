@@ -1,0 +1,175 @@
+.landing_vk_business__footer {
+  padding: 32px 0 40px;
+  text-align: left;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.landing_vk_business__footer .container {
+  display: flex;
+}
+
+.landing_vk_business__footer_logo {
+  display: inline-block;
+  width: 156px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='156' height='32' viewBox='0 0 156 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' fill-opacity='0' d='M0 0h156v32H0z'/%3E%3Cpath fill='%23000' fill-opacity='0' d='M0 0h156v32H0z'/%3E%3Cpath fill='%23000' fill-opacity='0' d='M43.642 2.648H156v21.296H43.642z'/%3E%3Cpath d='M47.094 22.253l-.679 1.465h-2.773V3.268h3.735v6.817s1.472-1.409 3.906-1.409c3.736 0 7.019 3.268 7.019 7.606 0 4.394-3.283 7.662-7.019 7.662-2.547-.057-4.189-1.69-4.189-1.69zm3.793-1.971c2.094 0 3.736-1.634 3.736-4.057 0-2.422-1.642-4.056-3.736-4.056-2.151 0-3.736 1.634-3.736 4.056 0 2.423 1.585 4.057 3.736 4.057zM60.736 17.521V8.79h3.736v8.281c0 1.972 1.302 3.268 3.113 3.268s3.113-1.296 3.113-3.268V8.79h3.736v14.93H71.66l-.679-1.466s-1.811 1.634-4.245 1.634c-3.51 0-6-2.422-6-6.366zM80.604 18.986c.17.958.962 1.803 2.264 1.803 1.302 0 2.15-.789 2.15-1.634 0-2.14-7.697-.789-7.697-6.028 0-2.423 2.15-4.564 5.377-4.564 3.566 0 5.547 1.916 5.887 4.564h-3.566c-.17-.676-.962-1.465-2.151-1.465-1.132 0-1.811.676-1.811 1.465 0 2.084 7.698.788 7.698 6.14 0 2.423-2.151 4.564-5.547 4.564-3.906 0-5.887-1.972-6.227-4.901h3.623v.056zM91.189 4.732c0-1.126.962-2.084 2.15-2.084 1.133 0 2.095.958 2.095 2.084 0 1.127-.962 2.085-2.094 2.085s-2.151-.958-2.151-2.085zm3.962 18.986h-3.736V8.788h3.736v14.93zM112.189 14.93v8.788h-3.736v-8.281c0-1.972-1.302-3.268-3.113-3.268-1.812 0-3.113 1.296-3.113 3.268v8.281h-3.736V8.788h2.773l.68 1.466s1.811-1.634 4.245-1.634c3.566 0 6 2.422 6 6.31zM128.717 19.155c-.792 2.253-3.283 4.732-6.679 4.732-4.076 0-7.528-3.436-7.528-7.662 0-4.225 3.452-7.605 7.528-7.605 3.905 0 7.132 3.098 7.132 7.605 0 .676-.17 1.465-.17 1.465h-10.472c.34 1.465 1.472 2.592 3.453 2.592 1.981 0 2.774-1.127 2.774-1.127h3.962zm-10.302-4.056h7.189c-.34-1.634-1.642-2.93-3.566-2.93-1.925 0-3.283 1.296-3.623 2.93zM134.321 18.986c.17.958.962 1.803 2.264 1.803 1.302 0 2.151-.789 2.151-1.634 0-2.14-7.698-.789-7.698-6.028 0-2.423 2.151-4.564 5.377-4.564 3.566 0 5.547 1.916 5.887 4.564h-3.566c-.17-.676-.962-1.465-2.151-1.465-1.132 0-1.811.676-1.811 1.465 0 2.084 7.698.788 7.698 6.14 0 2.423-2.151 4.564-5.547 4.564-3.906 0-5.887-1.972-6.227-4.901h3.623v.056zM147.849 18.986c.17.958.962 1.803 2.264 1.803 1.302 0 2.151-.789 2.151-1.634 0-2.14-7.698-.789-7.698-6.028 0-2.423 2.151-4.564 5.378-4.564 3.566 0 5.547 1.916 5.886 4.564h-3.566c-.17-.676-.962-1.465-2.151-1.465-1.132 0-1.811.676-1.811 1.465 0 2.084 7.698.788 7.698 6.14 0 2.423-2.151 4.564-5.547 4.564-3.906 0-5.887-1.972-6.226-4.901h3.622v.056z' fill='%234680C2'/%3E%3Cpath fill='%23fff' d='M2.659 7.111h27.477v20.444H2.659z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.943 0h-9.849C2.094 0 0 2.14 0 11.099V20.9C0 29.86 2.15 32 11.15 32H21c9 0 11.094-2.197 11.094-11.155v-9.803C32.094 2.085 29.944 0 20.944 0zm4.981 22.817h-2.32c-.906 0-1.132-.733-2.717-2.31-1.415-1.352-1.981-1.521-2.321-1.521-.453 0-.623.113-.623.789v2.084c0 .563-.17.902-1.698.902-2.49 0-5.207-1.522-7.132-4.282-2.887-4.056-3.679-7.099-3.679-7.718 0-.338.113-.676.792-.676h2.321c.623 0 .85.281 1.076.9 1.132 3.325 3.056 6.198 3.849 6.198.283 0 .453-.113.453-.901v-3.324c-.114-1.578-.906-1.69-.906-2.254 0-.282.226-.563.623-.563h3.679c.51 0 .679.281.679.845v4.62c0 .507.226.676.34.676.283 0 .566-.17 1.075-.733 1.698-1.859 2.887-4.788 2.887-4.788.056-.282.34-.62.905-.62h2.321c.736 0 .85.338.736.845-.283 1.352-3.17 5.352-3.17 5.352-.226.394-.34.62 0 1.014.227.338 1.076 1.014 1.585 1.69 1.02 1.127 1.755 2.085 1.981 2.704.227.733-.056 1.07-.736 1.07z' fill='%234680C2'/%3E%3C/svg%3E")
+}
+
+.landing_vk_business__footer_section {
+  display: inline-block;
+  width: 239px;
+  vertical-align: top
+}
+
+.landing_vk_business__footer_section:not(:first-of-type) {
+  padding-top: 8px
+}
+
+.landing_vk_business__footer_section:first-of-type {
+  margin-right: 28px
+}
+
+.landing_vk_business__footer_section:nth-of-type(2) {
+  margin-right: 56px
+}
+
+.landing_vk_business__footer_section:nth-of-type(3) {
+  margin-right: 27px
+}
+
+.landing_vk_business__footer_section:last-of-type {
+  width: 161px
+}
+
+.landing_vk_business__footer_title {
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-bottom: 18px;
+  color: #4680c2
+}
+
+.landing_vk_business__footer_link {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #4680c2
+}
+
+.landing_vk_business__footer_link:hover {
+  text-decoration: none
+}
+
+.landing_vk_business__footer_link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  transition: opacity .25s ease;
+  content: '';
+  background-color: #4680c2
+}
+
+.landing_vk_business__footer_link:hover:after {
+  opacity: 1
+}
+
+.landing_vk_business__footer_action {
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 21px;
+  padding-right: 14px;
+  text-decoration: none;
+  color: #4680c2
+}
+
+.landing_vk_business__footer_action:before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-top: 1px;
+  transform: translateY(-50%);
+  content: '';
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4-4 4' stroke='%234680C2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.landing_vk_business__footer_action:hover {
+  text-decoration: none
+}
+
+.landing_vk_business__footer_action:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: calc(86%);
+  height: 1px;
+  opacity: 0;
+  transition: opacity .25s ease;
+  content: '';
+  background-color: #4680c2
+}
+
+.landing_vk_business__footer_action:hover:after {
+  opacity: 1
+}
+
+.landing_vk_business__footer_mobile {
+  display: none
+}
+
+@media (max-width: 879px) {
+  .landing_vk_business__footer {
+    display: none
+  }
+
+  .landing_vk_business__footer .landing_vk_business__inner {
+    width: 100%
+  }
+
+  .landing_vk_business__footer_mobile {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 36px;
+    background-color: #fff
+  }
+
+  .landing_vk_business__footer_mobile .landing_vk_business__footer_section {
+    width: 100%;
+    margin: 0;
+    text-align: center
+  }
+
+  .landing_vk_business__footer_link {
+    margin-bottom: 19px
+  }
+
+  .landing_vk_business__footer_action:hover:after,
+  .landing_vk_business__footer_link:hover:after {
+    opacity: 0
+  }
+
+  .landing_vk_business__footer_logo {
+    width: 115px;
+    height: 24px;
+    margin-top: 16px
+  }
+}
